@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  # Основной сервис - телефонная книга
+  phonebook:
+    build: .
+    container_name: phonebook_app
+    stdin_open: true  # Нужно для ввода данных
+    tty: true         # Нужно для интерактивного режима
+    volumes:
+      # Сохраняем данные между запусками
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1  # Чтобы вывод сразу показывался

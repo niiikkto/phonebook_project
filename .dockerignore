@@ -1,0 +1,28 @@
+# Виртуальное окружение (если есть)
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+
+# Git
+.git/
+.gitignore
+
+# Данные (не копируем существующие данные)
+data/*.json
+data/*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Документация
+README.md
+REPORT.md
+
+# Docker файлы (чтобы не копировать сами себя)
+Dockerfile
+.dockerignore
+docker-compose.yml
