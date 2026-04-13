@@ -1,0 +1,25 @@
+
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Project
+data/contacts.json
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
